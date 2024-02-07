@@ -3,13 +3,11 @@
 ## IAM
 
 ## Congnito
-
 * Provides authentication service for custom applications.
 * Developers do not have to roll their own auth and can focus on business objectives instead.
 * Receives a token and provides it to the application.
 
 ## Directory Service
-
 Simple AD
 * Cannot integrate with other AD systems.
 * Limited feature set.
@@ -31,7 +29,6 @@ Benefits
   * All requests are verified through service
 
 ## CloudTrail
-
 * Records all API actions against AWS services, who, what, when
 * Stores 90 days by default, store in S3 or CloudWatch log group for anything longer
 * Good for auditing, compliance and incident response
@@ -40,10 +37,9 @@ Benefits
 * Tracks both data and management events
 
 ## Config
-
-* Tracks configuration changes across AWS resources
+* Tracks configuration changes across AWS resources, historical view of changes over time.
 * Can notify changes to your resources
-* Keeps inventory of AWS resources
+* Keeps inventory of AWS resources, data stored in S3 bucks and DynamoDB.
 * Can set desired configurationn state for a resource and get notified of any devition from this state.
 * Can track relationships between resources. This helps with understanding the impact of changes.
 
@@ -126,7 +122,10 @@ Benefits
 * Applications in a VPC can use a private interface to connect directly to AWS secrets manager
 
 ## AWS Trusted Advisor
-* 
+* A managed service that checks runs essential checks against your AWS account
+* Security checks, open S3 buckets, public RDS snapshots, root accounts without MFA enabled
+* Checks service quota limits
+* With Business support advisor can check for unassigned Elastic IPs
 
 
 
