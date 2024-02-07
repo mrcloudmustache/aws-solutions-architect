@@ -102,7 +102,7 @@ Benefits
 * Certificates are region dependent
 
 ## Private Certificate Authority
-* Scalable service that manages private certificates
+* Scalable service that manages private certificates for internal systems
 * Can integrate with ACM for automated renewals
 
 
