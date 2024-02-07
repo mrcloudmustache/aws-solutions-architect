@@ -32,10 +32,12 @@ Benefits
 
 ## CloudTrail
 
-* Tracks all API actions against AWS services, who, what, when
-* Stores 90 days be default, store in S3 for anthing longer
+* Records all API actions against AWS services, who, what, when
+* Stores 90 days by default, store in S3 or CloudWatch log group for anything longer
 * Good for auditing, compliance and incident response
 * Can send logs to S3 or Cloudwatch
+* Is a regional service and logs must be viewed seperately in each region
+* Tracks both data and management events
 
 ## Config
 
@@ -50,29 +52,41 @@ Benefits
 * Centralized audit repository in the management console
 * Free of charge
 
-## Gaurd Duty
-* Analyzes logs for malaicious or unusual activity
+## Guard Duty
+* Analyzes logs for malicious or unusual activity
 * Cloudtrail logs, vpc flow logs, DNS logs
 * Can trigger lambda functions
 * Can provide a trusted IP list and a threat IP list(vpc flow logs)
+* Supports AWS organizations
+* Useful for large workloads where inspecting each device by hand is not possible
+* Maleware protection creates replica snapshots of affected EBS volumes.
+* Integrates with Security hub
 
 ## Inspector
 * Scan aws systems for vulnerabilties
-* EC2, ECS, LAmbda
+* EC2, ECS, Lambda
 * Continuous monitoring
 * Create different environments with different scanning settings(asessment target)
+* Tag the EC2 to define the assessment target
 * Package, Code vulnerabilites and network rechability by assessing wide open security groups for example
 
 ## Macie
 * Uses ML to find sensitive data in S3 buckets
 * Used for PII
+* Prevents data leaks
+* Sensitive data can be identified using custom identifiers or keywords you configure
+* Can publish findings to EventBridge
+* Can analyze encrypted objects except those encrypted with Customer provided keys.
+* Real time logging to CloudWatch
+* Can setup one time or jobs to run on a schedule
 
-# Security Hub
+## Security Hub
 * Central location for all security data
 * Central view
 * Prioritize most critical events
 * Can automate remidiation
 * Compliance checks
+
 
 ## KMS
 * Used for encryption
@@ -104,6 +118,16 @@ Benefits
 ## Private Certificate Authority
 * Scalable service that manages private certificates for internal systems
 * Can integrate with ACM for automated renewals
+
+## Secrets Manager
+* Stores, rotates and manages organizationalsecrets
+* Can store credentials for APIs, SSH keys, databases etc
+* Secrets are encrypted at rest with CMKs or AWS KMS(default)
+* Applications in a VPC can use a private interface to connect directly to AWS secrets manager
+
+## AWS Trusted Advisor
+* 
+
 
 
 
