@@ -127,6 +127,9 @@ Benefits
 * Checks service quota limits
 * With Business support advisor can check for unassigned Elastic IPs
 
+## AWS Shield and WAF
+* Can provide DDoS protection for public facing web applications
+
 
 
 
