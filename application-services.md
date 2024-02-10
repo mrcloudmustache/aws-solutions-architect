@@ -26,3 +26,27 @@ SQS is a managed queing service that allows developers decouple communications b
 * Standard queue - best effort ordering, could receive duplicates
 * FIFO queue - delivered once, strict ordering, 300 messages or 9000 messages with batching
 * Integrates with, Lambda, EC2, S3, Step Functions
+
+## Step Functions
+* A service for automating multi step workflows using a GUI
+* Orchestrate multiple Lamda functions into a serverless application
+* Activity tasks - steps using custom code
+* Service tasks - steps using AWS services
+* Automates relationship between SNS and SQS
+* State machines are designed in JSON
+* Express flows - use with high event rates of 100,000 or more and short durations
+* Standard flows - use for long running workflows
+
+## AWS Event Bridge
+* Salable event bus service that integrates with AWS service along with SaaS services(Shopify, Zendesk etc)
+* Event routing and filtering
+* Event bus - Location where events are sent
+* Rules - control routing to taget applications and services
+* Pipes - Filter, enrich, transform data
+* Seheduler - configure scheduling patterns.
+* Event replay - can replay previous events for troubleshooting
+* Schema registry - define shape of your events for other team integrations
+* Events can be replicates across multiple regions using global endpoints
+
+## API Gateway
+* Simpl
