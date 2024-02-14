@@ -3,6 +3,8 @@
 ## EBS
 * Stores files in scalable block storage solutions that are attached to EC2 instances
 * Capacity size limites between 1TB up to 64TB
+* "E" stands for elastic. Can increase capacity or performance after creation.
+* Can Multi-attach 1 EBS volume to up to 16 nitro backed EC2 instances
 
 ## AWS Outposts
 * Lets end users run AWS services on premises in their own datacenters
