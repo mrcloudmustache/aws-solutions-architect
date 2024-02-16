@@ -7,6 +7,22 @@
 * Can Multi-attach 1 EBS volume to up to 16 nitro backed EC2 instances
 * Redundant within a single availabiliy zone across multiple devices
 
+Volume commands
+```
+# list block devices
+lsblk
+# verify files system
+sudo file -s /dev/xvdf
+# create xfs file system
+sudo mkfs.xfs /dev/xvdf
+# create mount directory
+mkdir -p /home/ec2-user/ebsdemo
+# mount volume 
+sudo mount /dev/xvdf /home/ec2-user/ebsdemo
+# unmount volume
+sudo ummount -l /home/ec2-user/ebsdemo
+```
+
 ## AWS Outposts
 * Lets end users run AWS services on premises in their own datacenters
 
