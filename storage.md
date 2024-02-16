@@ -5,6 +5,7 @@
 * Capacity size limites between 1TB up to 64TB
 * "E" stands for elastic. Can increase capacity or performance after creation.
 * Can Multi-attach 1 EBS volume to up to 16 nitro backed EC2 instances
+* Redundant within a single availabiliy zone across multiple devices
 
 ## AWS Outposts
 * Lets end users run AWS services on premises in their own datacenters
