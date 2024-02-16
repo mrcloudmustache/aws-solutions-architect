@@ -14,7 +14,7 @@ lsblk
 # verify files system
 sudo file -s /dev/xvdf
 # create xfs file system
-sudo mkfs.xfs /dev/xvdf
+sudo mkfs -t xfs /dev/xvdf
 # create mount directory
 mkdir -p /home/ec2-user/ebsdemo
 # mount volume 
