@@ -81,6 +81,8 @@ Bucket policy example
     ]
 }
 ```
+### List Buckets with CLI
+```aws s3 ls s3://mcmversionsdemo/```
 
 ## S3 Glacier
 * Provides archive storage for cold data thats accessed infrequently
