@@ -23,6 +23,9 @@ sudo mount /dev/xvdf /home/ec2-user/ebsdemo
 sudo ummount -l /home/ec2-user/ebsdemo
 ```
 
+## Instance Stores
+* Storage-optimized instances provide direct-attached Instance Store volumes that are ideal for high random I/O performance and low-latency workloads.
+  
 ## AWS Outposts
 * Lets end users run AWS services on premises in their own datacenters
 
@@ -62,6 +65,7 @@ sudo ummount -l /home/ec2-user/ebsdemo
 * Resource Policy
   * Can be applied to anonymous/public users
 * AWS does not recommend using S3 ACLs
+* S3 Cross-Region Replication (CRR) replicates data across regions for lower-latency access and compliance with data sovereignty requirements.
 
 Bucket policy example
 ```
@@ -98,6 +102,17 @@ Bucket policy example
 ## EFS (FSx)
 * Provides a shared file system for Windows systems
 * SMB Protocol
+
+## AWS Backup
+
+## Storage Gatewawy
+* Hybrid cloud storage that provides on-premises access to unlimited cloud storage
+* A virtual or physical server in your datacenter
+* Volume - iscsi block storage for OSes
+  * Stored mode - Presents iscsi attachments directly to the server. Data stored locally on-premises. Copy data to S3 as EBS snapshots.
+  * Cached mode - Data stored in S3s. Only cache of data is stored locally. Servers have unlimited storage capacity.
+* File - NFSv4/SMB similar to cached mode. Data stored in S3.
+* Tape - Presents an iscsi virtual tape drive. Copy data to S3 in a virtual tape library. Tape shelf stored in glacier.
 
 
 
