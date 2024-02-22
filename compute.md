@@ -36,3 +36,13 @@
 * A task is a running container
 * A service?
 * Load balancer
+
+## CloudTrail
+* API activity is logged to a CloudTrail Event
+* Logs management events by default. Data events are optional.
+* 90 days of logs are kept by default
+* Most trails are logged to the regions where the service reside
+* Global service events are logged to us-easat-1 such as IAM, STS, Cloudfront
+* Custom trails can be stored in S3 or CloudWatch logs
+* Organization trails are enabled in the management account and logs acticity from all accounts
+* Not realtime - 15 minutes within activity timestamp
