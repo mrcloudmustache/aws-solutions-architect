@@ -50,6 +50,7 @@
 * AWS managed contianer registry used for centrally hosting container images
 * Public ECR - accessible from internet, need to be authenticated to push images
 * Private ECR - not accessible from intenet, need to be authenticated to pull and push images
+* Cannot change visibility after repository is created
 * Image lifecycle management
 * Security image scanning
 
