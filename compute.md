@@ -9,20 +9,20 @@
   * Storage Optimize - High IO operations
   * GPU optiomized - AI, Deep learning, ML
 
-# Elastic Network Interface
+## Elastic Network Interface
 * Cannot remove primary ENI
 * Can assign a public EIP that stays with the ENI
 * Can detach and reattach from ec2 instance
 * ENI must be in the same availability zone as the instance
 
-# Elastic Beanstalk
+## Elastic Beanstalk
 * Handles deployment of AWS instructure for your application
 * Developers uploads application code and Beanstalk does the rest
 * Envrionments - dev, test, prod
 * Easy deployment of full stack apps. Support all of the major runtimes.
 * Autoscaling and managed platform updates
 
-# ECS
+## ECS
 * Containers allow you to package all of the application files and dependencies needed for the application to run
 * Lightweight version of virtual machines
 * Acts as a continer orchestrator. Like K8s.
@@ -45,6 +45,13 @@
  * Slef managed nodes - admin manually provisions ec2 instances,
  * Managed node group - automated provisioning of ec2 nodes EKS optimized images, node is part of autoscaling group managed by EKS
  * Fargate - Will create worker nodes on demand. Fully managed by AWS.
+
+## ECR
+* AWS managed contianer registry used for centrally hosting container images
+* Public ECR - accessible from internet, need to be authenticated to push images
+* Private ECR - not accessible from intenet, need to be authenticated to pull and push images
+* Image lifecycle management
+* Security image scanning
 
 ## CloudTrail
 * API activity is logged to a CloudTrail Event
