@@ -54,6 +54,13 @@
 * Image lifecycle management
 * Security image scanning
 
+## CloudWatch
+* Monitors AWS resources metrics in real-time
+* Can trigger alarms and use SNS to send notifications
+* Can store and collect logs
+* Publish custom metrics to namespaces
+* EventBridge???
+
 ## CloudTrail
 * API activity is logged to a CloudTrail Event
 * Logs management events by default. Data events are optional.
