@@ -37,6 +37,15 @@
 * A service?
 * Load balancer
 
+## EKS
+* A managed kubernetes service
+* Creates master nodes for you
+* Handles scaling and backups
+* User is responsible for the worker nodes
+ * Slef managed nodes - admin manually provisions ec2 instances,
+ * Managed node group - automated provisioning of ec2 nodes EKS optimized images, node is part of autoscaling group managed by EKS
+ * Fargate - Will create worker nodes on demand. Fully managed by AWS.
+
 ## CloudTrail
 * API activity is logged to a CloudTrail Event
 * Logs management events by default. Data events are optional.
