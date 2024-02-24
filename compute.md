@@ -70,3 +70,6 @@
 * Custom trails can be stored in S3 or CloudWatch logs
 * Organization trails are enabled in the management account and logs acticity from all accounts
 * Not realtime - 15 minutes within activity timestamp
+
+## Lambda
+* Serverless service that executes functions bases on triggers
