@@ -71,5 +71,17 @@
 * Organization trails are enabled in the management account and logs acticity from all accounts
 * Not realtime - 15 minutes within activity timestamp
 
-## Lambda
-* Serverless service that executes functions bases on triggers
+## EC2 Autoscaling
+* Scales EC2 in or out based on scaling polices.
+* Scaling policies
+  * Manual - min, desired, max - will always have number of desired instances
+  * Dynamic
+    * Target tracking - tracks target metrics such as networkIn, CPU, etc
+    * Simple scaling - cloudwatch alarms control scaling, can specify n number of instances to add or remove. Fixed scale value
+    * Step scaling - same as simple, with extra features. Can trigger at multiple levels. Between 10-20 add 1 instance, between 20-30 add 5 instances.
+  * Scheduled - scales at scheduled times
+  * Launch template - defines specs for the EC2 instances added to scaling group
+    * Instance config - access key, instance type, ami id, network configuration
+    * Versioning for easy updates
+    * Customizations using parameters
+   * Integrations - ELB, CloudWatch, EC2, SNS
