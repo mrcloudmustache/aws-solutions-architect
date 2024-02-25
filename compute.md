@@ -85,3 +85,6 @@
     * Versioning for easy updates
     * Customizations using parameters
    * Integrations - ELB, CloudWatch, EC2, SNS
+
+## Lambda
+* Serverless service that executes functions bases on triggers
