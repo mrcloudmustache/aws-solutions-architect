@@ -24,4 +24,15 @@
 * RPO of 5 minutes
 
 ## Aurora and Aurora Serverless
-* 
+* Supports mySQL and PostgreSQL DB engines
+* Decouples Compute and Data storage. Can scale each independently.
+* Continuous backup to S3 with 1 up to seconcd RPO for past 35 days
+* Six copies of data two in each AZ, across 6 storage nodes.
+* Up to 128 TB of storage
+* Requires 4 of 5 nodes for writes
+* Requires 3 of 6 no for reads
+* Can lose one AZ and still be operational
+* Aurora types
+ * Provisioned
+  * Fixed capacity 
+ * Serverless
