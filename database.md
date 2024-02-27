@@ -34,5 +34,21 @@
 * Can lose one AZ and still be operational
 * Aurora types
  * Provisioned
-  * Fixed capacity 
+  * Fixed capacity
+  * Have to manually scale up and down
+  * Supports Aurora global regions
  * Serverless
+  * Auto scaling
+  * Best for dynamic workloads
+  * Auora global V2 only
+  * Aurora capacity unit(ACU)
+   * One ACU 2 GB of memory, CPU, and networking
+   * Provide min(0.5) and max(128) ACUs
+
+## RDS Proxy
+* Establishes a fixed number of DB connections, then application open connections to RDS Proxy instead of directly to the database.
+* Allowing the proxy to queue or throttle connections
+* Improves DB performance
+* RDP proxy re-routes traffic after a DB failover which increases availability
+* Can enforce IAM and secret manager
+* Fully managed
