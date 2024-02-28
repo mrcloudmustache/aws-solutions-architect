@@ -71,4 +71,14 @@
 * Secondary indexes - allows sorting and query on non primary keys, enhancing query performance and efficiency
 * DynamoDB stream - sends CRUD events to other integrations
 * Use cases - Real time applications, media metadata stores, scales to support millions of connections
+* DynomaDB Accelerator(DAX) - in memory caching service for DynamoDB
+  * Cache none - one primary others are read replicas
+
+## Redshift
+* Datawarehouse that is designed to start large amounts of data from different sources
+* Unified view of your data
+* Optimized for complex analytics queries
+* Leader node - Manage client connections and generates query and sends them to the compute nodes
+* Compute nodes - Store data records and execute all of the queires from the leader node. All performed in parallel.
+* 
 
