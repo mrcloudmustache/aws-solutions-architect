@@ -33,17 +33,17 @@
 * Requires 3 of 6 no for reads
 * Can lose one AZ and still be operational
 * Aurora types
- * Provisioned
-  * Fixed capacity
-  * Have to manually scale up and down
-  * Supports Aurora global regions
- * Serverless
-  * Auto scaling
-  * Best for dynamic workloads
-  * Auora global V2 only
-  * Aurora capacity unit(ACU)
-   * One ACU 2 GB of memory, CPU, and networking
-   * Provide min(0.5) and max(128) ACUs
+  * Provisioned
+    * Fixed capacity
+    * Have to manually scale up and down
+    * Supports Aurora global regions
+  * Serverless
+    * Auto scaling
+    * Best for dynamic workloads
+    * Auora global V2 only
+* Aurora capacity unit(ACU)
+  * One ACU 2 GB of memory, CPU, and networking
+  * Provide min(0.5) and max(128) ACUs
 
 ## RDS Proxy
 * Establishes a fixed number of DB connections, then application open connections to RDS Proxy instead of directly to the database.
@@ -52,3 +52,23 @@
 * RDP proxy re-routes traffic after a DB failover which increases availability
 * Can enforce IAM and secret manager
 * Fully managed
+
+## DynamoDB
+* Fully managed scalable NoSQL database
+* Tables - collection of data. Users or products table.
+* Items - entry with the table. Each user is an item.
+* Attributes - properties of an item within the table.
+* Primary key - uniquely identifies each item in the table
+  * Single attribute - Partition Key
+  * Composite - Partition and Sort key. Both attributes make up the primary key
+* Tables are schemaless
+* Table classes
+  * Standard Acccess - default option with full perform of DynamoDB
+  * Standard Infrequent Access - useful for logs are not accessed verf often. application logs, order history, old social media posts
+* Supports Key value and Document data
+* Zero down time maintenance
+* Global tables active-active which means you can read and write teh DB in each region
+* Secondary indexes - allows sorting and query on non primary keys, enhancing query performance and efficiency
+* DynamoDB stream - sends CRUD events to other integrations
+* Use cases - Real time applications, media metadata stores, scales to support millions of connections
+
