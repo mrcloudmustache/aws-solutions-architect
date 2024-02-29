@@ -30,6 +30,9 @@
 * A subnet can only be associated with one route table
 
 ## Internet Gateway
-* 
+* Enable resources to access the internet
+* IGWs attach to a VPC in a specific region
+* VPCs can only have one IGW attached
+* Subnet is public once a route points towards the IGW
 
  
