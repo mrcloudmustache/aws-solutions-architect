@@ -35,4 +35,10 @@
 * VPCs can only have one IGW attached
 * Subnet is public once a route points towards the IGW
 
+## NAT Gateway
+* Allows traffic sourced from private subnets to the internet, but does allow traffic sourced from the Internet to instances on the private subnet
+* Deployed to a subnet, so they are AZ resiliant and more than one should be create for fault tolerance
+* Must be placed on a public subnet with a default route to the Internet Gateway
+* Cost per hour per NAT instance
+
  
