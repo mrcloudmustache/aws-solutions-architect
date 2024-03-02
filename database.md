@@ -22,6 +22,7 @@
  * Provisioned IOPs SSD - designed for I/O intennsive workloads, low I/O latency, consistent I/O througput, production environments, Max 16TB
  * Magnetic - Hard disk drives, not supported by some DB engines
 * RPO of 5 minutes
+* RDS events only provide operational events such as DB instance events, DB parameter group events, DB security group events, and DB snapshot even
 
 ## Aurora and Aurora Serverless
 * Supports MySQL and PostgreSQL DB engines
