@@ -13,14 +13,15 @@
   * Can promote standby to primary DB for writes
   * More expensive
 * Read replica
- *  Distributes read traffic between multiple databases
- *  Reduces load on your primary database
- *  Can promote to a standalone instance if primary DB fails
- *  Can create cross-region read replicas to reduce latency from global users
+  *  Distributes read traffic between multiple databases
+  *  Reduces load on your primary database
+  *  Can promote to a standalone instance if primary DB fails
+  *  Can create cross-region read replicas to reduce latency from global users
+* Auto-scaling - automatically scales store when space is low. Can set maximum storage limit.
 * Storage types
- * General Purpose SSD - use for a broad range of workloads, dev and test environments, 3000 iOps
- * Provisioned IOPs SSD - designed for I/O intennsive workloads, low I/O latency, consistent I/O througput, production environments, Max 16TB
- * Magnetic - Hard disk drives, not supported by some DB engines
+  * General Purpose SSD - use for a broad range of workloads, dev and test environments, 3000 iOps
+  * Provisioned IOPs SSD - designed for I/O intennsive workloads, low I/O latency, consistent I/O througput, production environments, Max 16TB
+  * Magnetic - Hard disk drives, not supported by some DB engines
 * RPO of 5 minutes
 * RDS events only provide operational events such as DB instance events, DB parameter group events, DB security group events, and DB snapshot even
 
