@@ -10,13 +10,21 @@
   * lower cost
 * Multi-AZ
   * Replicate data to standby into a different AZ
+  * Synchronous replication
+  * DNS name redirected to standby DB when a failure is detected
   * Can promote standby to primary DB for writes
   * More expensive
+  * No reads and writes on the standby DB
+  * Read replicas can be setup with multi AZ
+  * Zero downtime when enabling multi AZ
 * Read replica
+  *  Asyncronous replication(eventually consistent)
   *  Distributes read traffic between multiple databases
   *  Reduces load on your primary database
   *  Can promote to a standalone instance if primary DB fails
   *  Can create cross-region read replicas to reduce latency from global users
+  *  Applications must use the reader endpoint
+  *  No fee for cross AZ replication when primary DB is in the same region.
 * Auto-scaling - automatically scales store when space is low. Can set maximum storage limit.
 * Storage types
   * General Purpose SSD - use for a broad range of workloads, dev and test environments, 3000 iOps
