@@ -19,6 +19,8 @@ Problem statement - Sequential proccesing between multiple services can cause bo
 SQS is a managed queing service that allows developers decouple communications between distributed workloads such as microservices.
 
 * SQS can be 256KB in size.
+* Default retention is 4 days, max is 14 days
+* * Messages persist in the queue until a consumer deletes it or the retention period ends
 * The visibility timeout id the unavailable time after a message is being processed.
 * Each message is deleted after it's processed.
 * Dead letter queue isolates and contains messages that failed to be processed
@@ -26,6 +28,7 @@ SQS is a managed queing service that allows developers decouple communications b
 * Standard queue - best effort ordering, could receive duplicates
 * FIFO queue - delivered once, strict ordering, 300 messages or 9000 messages with batching
 * Integrates with, Lambda, EC2, S3, Step Functions
+
 
 ## Step Functions
 * A service for automating multi step workflows using a GUI
