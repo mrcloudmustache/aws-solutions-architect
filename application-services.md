@@ -51,5 +51,5 @@ SQS is a managed queing service that allows developers decouple communications b
 * Schema registry - define shape of your events for other team integrations
 * Events can be replicates across multiple regions using global endpoints
 
-## API Gateway
-* Simpl
+## Kinesis
+
