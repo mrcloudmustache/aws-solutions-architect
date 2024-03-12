@@ -21,12 +21,12 @@ SQS is a managed queing service that allows developers decouple communications b
 * SQS can be 256KB in size.
 * Default retention is 4 days, max is 14 days
 * * Messages persist in the queue until a consumer deletes it or the retention period ends
-* The visibility timeout id the unavailable time after a message is being processed.
-* Each message is deleted after it's processed.
+* The visibility timeout is how long the message is hidden from other consumers after being processed. Default: 30 seconds
 * Dead letter queue isolates and contains messages that failed to be processed
 * Can be Standard or FIFO
-* Standard queue - best effort ordering, could receive duplicates
-* FIFO queue - delivered once, strict ordering, 300 messages or 9000 messages with batching
+* Long polling is any value longer than 0 seconds. Improves latency and reduces number of api calls, creating cost savings.
+* Standard queue - best-effort ordering, could receive duplicates
+* FIFO queue - limits throughput, delivered once, strict ordering.
 * Integrates with, Lambda, EC2, S3, Step Functions
 
 
