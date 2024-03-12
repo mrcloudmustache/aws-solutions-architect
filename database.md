@@ -33,15 +33,22 @@
 * RPO of 5 minutes
 * RDS events only provide operational events such as DB instance events, DB parameter group events, DB security group events, and DB snapshot even
 
+## RDS Custom
+* Full access to EC2 instance
+* Use with Oracle and MS SQL
+
 ## Aurora and Aurora Serverless
 * Supports MySQL and PostgreSQL DB engines
 * Decouples compute and Data storage. Can scale each independently.
+* 20 percent higher cost than RDS
 * Continuous backup to S3 with 1 up to second RPO for the past 35 days
 * Six copies of data two in each AZ, across 6 storage nodes.
-* Up to 128 TB of storage
+* Automatically grows between 10GB up to 128 TB of storage
 * Requires 4 of 5 nodes for writes
-* Requires 3 of 6 no for reads
+* Requires 3 of 6 nodes for reads
 * Can lose one AZ and still be operational
+* Writer endpoint points to master DB
+* Reader endpoint connection load balancing between all read replicas
 * Aurora types
   * Provisioned
     * Fixed capacity
