@@ -17,10 +17,13 @@
   * NLB - used for high throughput and to pair with AWS Private Link
 * Data Volumes
   * Mount EFS to the ECS task
-  * 
 
 ## Amazon EKS
+* Managed open source container management service
+* Use case is the user is already running an instance of K8s and wants to migrate to AWS
+* Supports EC2 and Fargate node deployments
 
-
-## AWS Fargate
-
+## App Runner
+* Managed service that deploys code without needing to configure any infrastructure
+* Use source code or container
+* Good for web apps, APIs and microservices
