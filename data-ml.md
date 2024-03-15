@@ -32,7 +32,26 @@
 * Data analytics
 
 ## Amazon MQ
-  * Managed message broker service for Rabbit MQ and ActiveMQ
-  * Supports open source brokers
-  * Not as scalable as SQS
-  * Uses servers in Multi-AZ for failover (active/standby)
+* Managed message broker service for Rabbit MQ and ActiveMQ
+* Supports open source brokers
+* Not as scalable as SQS
+* Uses servers in Multi-AZ for failover (active/standby)
+
+## Athena
+* Severless Amazon S3 query service that uses SQL langauge
+* Used with Amazon Quicksight for reporting and dashboards
+* Supports CSV, JSON and Parquet
+* Used for BI, analytics, VPC Flow Logs, ELB logs, CloudTrail trails
+* Performance and cost savings
+  * Columnar for cost saving - less scans
+  * Apache Parquet or ORC recommended
+  * Large perform improvement
+  * Compress data to create smaller retrievals
+  * Partition the datasets in S3
+  * User larger files
+* Federated Query
+  * Can run SQL queries accross different data sources
+  * Use data connectors that run on Lambda - Query CloudWatch logs, DynamoDB, RDS etc...
+  * Results are stored back in S3
+
+
