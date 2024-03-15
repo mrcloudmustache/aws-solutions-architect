@@ -85,11 +85,24 @@
 * Supports Key value and Document data
 * Zero downtime maintenance
 * Global tables active-active which means you can read and write the DB in each region
+ * Requires enabling DynamoDB streams for replication
 * Secondary indexes - allows sorting and query on non-primary keys, enhancing query performance and efficiency
 * DynamoDB stream - sends CRUD events to other integrations
 * Use cases - Real-time applications, media metadata stores, scales to support millions of connections
 * DynomaDB Accelerator(DAX) - in-memory caching service for DynamoDB
+  * Microsend latency for cached data
+  * Does not require application logic changes
   * Cache none - one primary others are read replicas
+* DynamoDB Streams
+ *  Stream of ordered item level changes in a table
+ *  Limited consumers
+  * DynamoDB KCL adapter
+  * Lambda  
+ *  24 hour retention
+* Kinesis data streams
+ * 1 year of retention
+ * High consumers
+  * AWS Glue, Kinesis data firehouse
 
 ## Redshift
 * Datawarehouse that is designed to start large amounts of data from different sources
