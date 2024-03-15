@@ -25,3 +25,11 @@
 ## Lamda VPC
 * Launched in an Amazon owned VPC by default
   * Can access public AWS resources such as S3, DynamoDB
+
+## RDS Invoking Lambda
+* You can use RDS events to invoke lambda functions
+ * RDS must allow outbound to Lambda via NAT GW, VPC Endpoint etc
+ * RDS must have role permissions to call the function
+ * RDS events don't have any information about the data itself
+  * Must call the functions from within the DB  
+
