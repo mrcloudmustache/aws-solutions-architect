@@ -107,9 +107,13 @@
 ## Redshift
 * Datawarehouse that is designed to start large amounts of data from different sources
 * Unified view of your data
-* Optimized for complex analytics queries
+* Columnar storage of data and parallel query engine
+* Optimized for complex analytics queries (OLAP)
+* Has a SQL interface
+* Must load data into Redshift vs ad hoc query versus Athena
 * Leader node - Manage client connections generate queries and send them to the compute nodes
 * Compute nodes - Store data records and execute all the queries from the leader node. All are performed in parallel.
+* Redshift spectrum - Can run queries against S3 without loading the data into the Redshift cluster.
 
 ## ElastiCache
 * Managed In-memory caching service
