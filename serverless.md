@@ -33,3 +33,13 @@
  * RDS events don't have any information about the data itself
   * Must call the functions from within the DB  
 
+## API Gateway
+* Supports version
+* Support multiple environments
+* Handles request throttling
+* Transform and validate requests and responses
+* Integrates with Lambda nicely
+
+## Amazon Cognito
+* Provides user with identity to interact with a web or mobile application
+* Integrates with API Gateway and Application Load Balancer
