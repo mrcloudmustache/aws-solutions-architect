@@ -41,6 +41,33 @@
 ## Amazon EventBridge
 * Can schedule Cron jobs
 * Can create event rules to react to service changes
-* 
+
+## Cloudwatch Insights
+* Cloudwatch Container Insights
+  * Container metrics and logs
+  * ECS,EKS, Fargate needs agents for monitoring Kubernetes
+* Cloudwatch Lambda Insights
+   * Detailed metrics on serverless applications
+* CloudWatch Contributor Insights
+   * Find Top N contributors in CloudWatch logs
+* CloudWatch Application Insights
+   * Automatic dashboards for troubleshooting application and AWS services
+
+## AWS CloudTrail
+* Logs and tracks all API calls to AWS services
+* Logs are kept for 90 days by default
+* Managements events are logged by default
+   * Operations performed on your AWS resources(CreateSubnet, AttachRolePolicy)
+   *  Read Events and Write events
+* Data Events are not logged by default
+   * S3 object-level transactions as an example
+* CloudTrail Insights - are used to detect unsual activity in your account
+* To keep event longer than 90 days log them to S3 and use Athena
+
+## AWS Config
+* Records configurations and changes over time for auditing and compliance of your AWS resources
+* Examples: Buckets public access? Public SSh access in my security groups
+* AWS Config Rules do prevent actions from happening
+* Can auto remediation of non-compliant resources by using SSM automation Documents
 
 
