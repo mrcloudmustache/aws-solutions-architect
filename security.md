@@ -2,6 +2,13 @@
 
 ## IAM
 
+## Organizations
+* Global service that allows you to manag multiple AWS accounts
+* Consolidated billing across all accounts
+* Shared reservers instance and Savings PLans discounts across accounts
+* API to creates accounts with an Organization
+* Service Control Policies(SCP) - IAM policies applied to OU or Accounts to restrict Users and Roles
+
 ## Congnito
 * Provides authentication service for custom applications.
 * Developers do not have to roll their own auth and can focus on business objectives instead.
