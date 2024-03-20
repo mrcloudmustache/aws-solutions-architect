@@ -137,6 +137,8 @@ Benefits
 ## AWS Shield and WAF
 * Can provide DDoS protection for public facing web applications
 
+## AWS IAM Identity Center
+* One login for multiple AWS accounts
 
 
 
